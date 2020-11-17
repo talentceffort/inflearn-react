@@ -1,23 +1,11 @@
-function LikeButton() {
-  const [liked, setLiked] = React.useState(false);
-  const text = liked ? '좋아요 취소' : '좋아요';
-
-  // return React.createElement(
-  //   'button', {
-  //     onClick: () => setLiked(!liked)
-  //   },
-  //   text,
-  // )
-  return (
-    <button onClick={() => setLiked(!liked)}>{text}</button>
-  )
-}
+import React from 'react';
+import ReactDOM from 'react-dom';
+import LikeButton from './Button'
 
 function Container() {
   const [count, setCount] = React.useState(0)
 
   return (
-    <>
     <div>
       <LikeButton/>
       <div style={{ marginTop: 20}}>
@@ -27,7 +15,6 @@ function Container() {
         <button onClick={() => setCount(count - 1)}>감소</button>
       </div>
     </div>
-    </>
   )
 }
 
