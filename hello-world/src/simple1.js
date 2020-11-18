@@ -17,7 +17,6 @@ function Container() {
   const [count, setCount] = React.useState(0)
 
   return (
-    <>
     <div>
       <LikeButton/>
       <div style={{ marginTop: 20}}>
@@ -27,7 +26,6 @@ function Container() {
         <button onClick={() => setCount(count - 1)}>감소</button>
       </div>
     </div>
-    </>
   )
 }
 

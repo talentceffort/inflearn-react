@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: './hello-world/src/index.js',
+  entry: './spa1/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'my-first-webpack.bundle.js'
+    filename: 'sp1.bundle.js'
   },
   module: {
     rules:[{
